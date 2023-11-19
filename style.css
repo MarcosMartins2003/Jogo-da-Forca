@@ -1,0 +1,78 @@
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  body {
+      background-color: #0e0e0e;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column; 
+    }
+    
+    h1, p {
+      
+      text-align: center;
+    }
+    
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      background-color: #1a1a1a;
+      color: #b0b0b0;
+      border: 1px solid rgb(113, 110, 255);
+      border-radius: 5px;
+      outline: none;
+    }
+    
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      animation: pulse 5s infinite;
+      background-color: rgb(113, 110, 255);;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: none;
+    }
+    
+    button:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+    }
+    
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    
+    #palavra {
+        margin-top: 20px;
+        font-size: 32px;
+        color: rgb(113, 110, 255);;
+    }
+
+    #letras-erradas {
+        margin-top: 20px;
+        font-size: 22px;
+        color: rgb(113, 110, 255);;
+    }
+  
+    button:hover {
+      background-color: rgb(113, 110, 255);;
+    }
